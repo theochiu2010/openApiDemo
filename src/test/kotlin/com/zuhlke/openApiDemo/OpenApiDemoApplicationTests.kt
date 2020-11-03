@@ -1,0 +1,13 @@
+package com.zuhlke.openApiDemo
+
+import org.junit.jupiter.api.Test
+import org.springframework.boot.test.context.SpringBootTest
+
+@SpringBootTest
+class OpenApiDemoApplicationTests {
+
+	@Test
+	fun contextLoads() {
+	}
+
+}
