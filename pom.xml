@@ -84,7 +84,12 @@
 			<artifactId>logging-interceptor</artifactId>
 			<version>2.7.5</version>
 		</dependency>
-
+		<dependency>
+			<groupId>org.testng</groupId>
+			<artifactId>testng</artifactId>
+			<version>RELEASE</version>
+			<scope>compile</scope>
+		</dependency>
 
 		<!--		&lt;!&ndash; https://mvnrepository.com/artifact/io.swagger/swagger-annotations &ndash;&gt;-->
 <!--		<dependency>-->
@@ -146,6 +151,8 @@
 						<configuration>
 							<inputSpec>${project.basedir}/src/main/resources/spec/sampleApi.yaml</inputSpec>
 							<language>java</language>
+							<generateApiTests>false</generateApiTests>
+							<generateModelTests>false</generateModelTests>
 							<configOptions>
 								<sourceFolder>src/gen/java/main</sourceFolder>
 							</configOptions>
